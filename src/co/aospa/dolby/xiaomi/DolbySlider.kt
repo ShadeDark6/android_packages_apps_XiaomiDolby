@@ -21,6 +21,7 @@ import androidx.compose.foundation.interaction.collectIsDraggedAsState
 import androidx.compose.foundation.interaction.collectIsFocusedAsState
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
 import androidx.compose.runtime.Composable
@@ -39,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import kotlin.math.roundToInt
 
 /** A compact, consistent slider matching the app's custom equalizer controls. */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 internal fun DolbySlider(
     value: Float,
