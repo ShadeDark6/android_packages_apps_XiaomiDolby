@@ -101,8 +101,8 @@ internal fun DolbySlider(
         },
         track = { state ->
             Canvas(Modifier.fillMaxWidth().height(4.dp)) {
-                val fraction = ((state.value - state.valueRange.start) /
-                    (state.valueRange.endInclusive - state.valueRange.start)).coerceIn(0f, 1f)
+                val fraction = ((state.value - valueRange.start) /
+                    (valueRange.endInclusive - valueRange.start)).coerceIn(0f, 1f)
                 val centerY = size.height / 2f
                 val stroke = 4.dp.toPx()
                 drawLine(
